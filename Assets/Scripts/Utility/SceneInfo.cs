@@ -1,8 +1,6 @@
-
 namespace Utility
 {
-    public abstract class SceneInfo
-    {
-
-    }
+  public abstract class SceneInfo
+  {
+  }
 }

@@ -451,22 +451,31 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Main" t="Include">
+            <e p="BackGroundCanvas.cs" t="Include" />
             <e p="MainButtonController.cs" t="Include" />
+            <e p="MainCanvas.cs" t="Include" />
             <e p="MainScene.cs" t="Include" />
           </e>
+          <e p="Root" t="Include">
+            <e p="RootCanvas.cs" t="Include" />
+            <e p="RootScene.cs" t="Include" />
+          </e>
           <e p="Start" t="Include">
+            <e p="BackGroundCanvas.cs" t="Include" />
             <e p="StartButtonController.cs" t="Include" />
+            <e p="StartCanvas.cs" t="Include" />
             <e p="StartScene.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
-            <e p="Button.cs" t="Include" />
             <e p="ButtonController.cs" t="Include" />
-            <e p="Canvas.cs" t="Include" />
+            <e p="ButtonEx.cs" t="Include" />
+            <e p="CanvasEx.cs" t="Include" />
             <e p="InitializerTable.cs" t="Include" />
             <e p="RuntimeInitializer.cs" t="Include" />
-            <e p="Scene.cs" t="Include" />
+            <e p="SceneEx.cs" t="Include" />
             <e p="SceneInfo.cs" t="Include" />
             <e p="SceneManagerEx.cs" t="Include" />
+            <e p="UICanvas.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

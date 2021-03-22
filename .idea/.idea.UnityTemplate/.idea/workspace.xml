@@ -1,27 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5112b27c-bdb7-4313-81a8-83864bfac141" name="Default Changelist" comment="" />
+    <list default="true" id="5112b27c-bdb7-4313-81a8-83864bfac141" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RootScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/RootScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Main/BackGroundCanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Main/BackGroundCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Main/MainCanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Main/MainCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Root.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Root/RootCanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Root/RootCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Root/RootScene.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Root/RootScene.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Start/BackGroundCanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Start/BackGroundCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Start/StartCanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Start/StartCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/CanvasEx.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/UICanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/UICanvas.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main/MainButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main/MainButtonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main/MainScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main/MainScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Start/StartButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Start/StartButtonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Start/StartScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Start/StartScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Button.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Button.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Canvas.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Canvas.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/CanvasEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/InitializerTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/InitializerTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/RuntimeInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/RuntimeInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneManagerEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneManagerEx.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Workspace/2020/ChemiLab/Assets/Scripts/Game/GameScene.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Workspace/2020/ChemiLab/Assets/Scripts/Utility/SceneManagerEx.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Workspace/2020/ChemiLab/Assets/Scripts/Table/TableScene.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Scene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Canvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Button.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Main/MainScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Scene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonEx.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Start/StartScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SceneManagerEx.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Main/MainButtonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Start/StartButtonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Main/MainButtonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Start/StartCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Main/MainScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Start/BackGroundCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Main/BackGroundCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SceneEx.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Root/RootCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/CanvasEx.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Main/MainCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/UICanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SceneManagerEx.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Root/RootScene.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1pevJ9QQrLncR3Df1AR0AyaqpsP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,6 +109,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -61,6 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615556305090</updated>
       <workItem from="1615556319515" duration="6720000" />
+      <workItem from="1616414706911" duration="9387000" />
     </task>
     <servers />
   </component>
@@ -69,7 +150,24 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="337" y="75" key="SettingsEditor" timestamp="1616428608773">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state x="337" y="75" key="SettingsEditor/0.25.1440.790@0.25.1440.790" timestamp="1616428608773" />
   </component>
 </project>

@@ -4,16 +4,17 @@ using Utility;
 
 namespace Start
 {
-    public class StartButtonController : ButtonController
+  public class StartButtonController : ButtonController
+  {
+    public override async Task OnClick(string objectName)
     {
-        public override async Task OnClick(string objectName)
-        {
-            switch (objectName)
-            {
-                case "Button1":
-                    await SceneManagerEx.Instance.LoadSceneAsync<MainScene>();
-                    break;
-            }
-        }
+      switch (objectName)
+      {
+        case "Button1":
+          await SceneManagerEx.Instance.UnloadSceneAsync<StartScene>();
+          await SceneManagerEx.Instance.LoadSceneAsync<MainScene>();
+          break;
+      }
     }
+  }
 }
