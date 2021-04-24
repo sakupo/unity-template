@@ -1,18 +1,21 @@
 using System.Threading.Tasks;
 using Start;
 using Utility;
+using Zenject;
 
 namespace Main
 {
   public class MainButtonController : ButtonController
   {
+    [Inject]
+    private ISceneManagerEx sm;
     public override async Task OnClick(string objectName)
     {
       switch (objectName)
       {
         case "Button1":
-          await SceneManagerEx.Instance.UnloadSceneAsync<MainScene>();
-          await SceneManagerEx.Instance.LoadSceneAsync<StartScene>();
+          await sm.UnloadSceneAsync<MainScene>();
+          await sm.LoadSceneAsync<StartScene>();
           break;
       }
     }

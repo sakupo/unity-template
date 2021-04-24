@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b09d9213cd8614b5c9adcb6a0aca422f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeScenes: []
   goLoadingBarrier: {fileID: 9144611091838545922}
 --- !u!1 &9144611091838545922
 GameObject:

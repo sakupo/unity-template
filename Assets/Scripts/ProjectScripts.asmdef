@@ -1,0 +1,4 @@
+{
+	"name": "ProjectScripts",
+	"references": [ "Unity.TextMeshPro", "UniTask", "Zenject" ]
+}

@@ -11,6 +11,11 @@ namespace Utility
   {
     public TextMeshProUGUI title;
 
+    protected virtual void Start()
+    {
+      InitAtStart();
+    }
+    
     public void ShowCanvas()
     {
       gameObject.SetActive(true);
@@ -23,6 +28,11 @@ namespace Utility
     }
 
     protected virtual void Init()
+    {
+      /* do nothing */
+    }
+    
+    protected virtual void InitAtStart()
     {
       /* do nothing */
     }

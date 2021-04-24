@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bcd7e40896541419c10c2c9d401ccb, type: 3}
   m_Name: InitializerTable
   m_EditorClassIdentifier: 
-  <Objects>k__BackingField:
-  - {fileID: 9144611090126222628, guid: 570c7c8e0a90b4758ba7ece82c811e84, type: 3}
+  <Objects>k__BackingField: []

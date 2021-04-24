@@ -1,27 +1,31 @@
 using System;
 using System.Linq;
-using Cysharp.Threading.Tasks.Triggers;
 using Root;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using Zenject;
 
 namespace Utility
 {
   public class UICanvas : CanvasEx
   {
-    private void Start()
+    [Inject]
+    private ISceneManagerEx sm;
+    protected override void Start()
     {
-      ChangeCamera("RootScene");
+      ChangeCamera();
+      InitAtStart();
     }
 
-    protected void ChangeCamera(String toSceneName)
+    protected void ChangeCamera()
     {
       // 親シーン(Root)のルートキャンバスを取得する
-      var rootCanvas = RootScene.Instance.rootCanvas.GetCanvas();
+      var rootScene = sm.GetScene<RootScene>();
+      var rootCanvas = rootScene.rootCanvas.GetCanvas();
 
       // 自身のシーン(Additive)のルートキャンバスを取得する
-      var thisCanvas = GetComponent<Canvas>();
+      var thisCanvas = GetCanvas();
 
       // 自身のシーン(Additive)のルートキャンバスのUIカメラを削除する
       if (thisCanvas.worldCamera != null)
@@ -47,5 +51,6 @@ namespace Utility
         instance.AddComponent<StandaloneInputModule>();
       }
     }
+    
   }
 }
