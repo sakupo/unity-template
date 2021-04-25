@@ -23,11 +23,19 @@ public class PlayModeTestScript: ZenjectIntegrationTestFixture
     [SetUp]
     public async void SetUp()
     {
+        // SceneContextの生成
         PreInstall();
+        /*
+         * ここでBind
+         */
+        // Inject実行
         PostInstall();
+        
+        // 初期シーンの生成
         await sm.LoadSceneAsync<RootScene>(null, LoadSceneMode.Single);
         await sm.LoadSceneAsync<StartScene>();
     }
+
     // A Test behaves as an ordinary method
     [Test]
     public void PlayModeTestScriptSimplePasses()
@@ -42,7 +50,7 @@ public class PlayModeTestScript: ZenjectIntegrationTestFixture
     {
         // Use the Assert class to test conditions.
         // Use yield to skip a frame.
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1f);
         Assert.IsNotNull(sm.GetScene<StartScene>());
         Assert.IsNull(sm.GetScene<MainScene>());
     }
