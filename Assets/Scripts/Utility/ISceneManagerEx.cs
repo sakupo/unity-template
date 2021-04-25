@@ -10,5 +10,6 @@ namespace Utility
 
     public UniTask UnloadSceneAsync<T>() where T : SceneEx;
     public T GetScene<T>() where T : SceneEx;
+    public void SetScene<T>() where T : SceneEx;
   }
 }

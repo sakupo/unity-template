@@ -1,324 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+    <e p="C:\Users\saku\AppData\local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\saku\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\Rider\v202\SolutionCaches\_UnityTemplate.-2016747123.00" t="ExcludeRecursive" />
+    <e p="D:\Google Drive\Template\UnityTemplate" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AltUnityTester" t="Include">
-          <e p="3rdParty" t="Include">
-            <e p="JsonDotNet" t="Include">
+        <e p="Airtest" t="Include">
+          <e p="Unity3D" t="Include">
+            <e p="3rdLib" t="Include">
               <e p="link.xml" t="Include" />
             </e>
-            <e p="nlog.4.7.9" t="Include">
-              <e p="[Content_Types].xml" t="Include" />
-              <e p="lib" t="Include">
-                <e p="netstandard2.0" t="Include">
-                  <e p="NLog.xml" t="Include" />
-                </e>
-              </e>
+            <e p="ConcurrentDictionary.cs" t="Include" />
+            <e p="PocoManager.cs" t="Include" />
+            <e p="sdk" t="Include">
+              <e p="AbstractDumper.cs" t="Include" />
+              <e p="AbstractNode.cs" t="Include" />
             </e>
-            <e p="Unity.IO.Compression" t="Include">
-              <e p="BlockType.cs" t="Include" />
-              <e p="CompressionMode.cs" t="Include" />
-              <e p="CopyEncoder.cs" t="Include" />
-              <e p="Crc32Helper.cs" t="Include" />
-              <e p="DeflateInput.cs" t="Include" />
-              <e p="DeflaterManaged.cs" t="Include" />
-              <e p="DeflateStream.cs" t="Include" />
-              <e p="DeflateStreamAsyncResult.cs" t="Include" />
-              <e p="FastEncoder.cs" t="Include" />
-              <e p="FastEncoderStatics.cs" t="Include" />
-              <e p="FastEncoderWindow.cs" t="Include" />
-              <e p="FileFormats.cs" t="Include" />
-              <e p="GZipDecoder.cs" t="Include" />
-              <e p="GZipStream.cs" t="Include" />
-              <e p="GZipUtils.cs" t="Include" />
-              <e p="HuffmanTree.cs" t="Include" />
-              <e p="IDeflater.cs" t="Include" />
-              <e p="Inflater.cs" t="Include" />
-              <e p="InflaterState.cs" t="Include" />
-              <e p="InputBuffer.cs" t="Include" />
-              <e p="InvalidDataException.cs" t="Include" />
-              <e p="Match.cs" t="Include" />
-              <e p="MatchState.cs" t="Include" />
-              <e p="OutputBuffer.cs" t="Include" />
-              <e p="OutputWindow.cs" t="Include" />
-              <e p="SR.cs" t="Include" />
+            <e p="TcpClientConnectedEventArgs.cs" t="Include" />
+            <e p="TcpClientDisconnectedEventArgs.cs" t="Include" />
+            <e p="TcpClientState.cs" t="Include" />
+            <e p="TcpDatagramReceivedEventArgs.cs" t="Include" />
+            <e p="TcpServer.cs" t="Include" />
+            <e p="ugui" t="Include">
+              <e p="UnityNode.cs" t="Include" />
             </e>
-          </e>
-          <e p="AltUnityDriver" t="Include">
-            <e p="AltSocket" t="Include">
-              <e p="ISocket.cs" t="Include" />
-              <e p="Socket.cs" t="Include" />
-            </e>
-            <e p="AltUnity" t="Include">
-              <e p="AltUnityAxis.cs" t="Include" />
-              <e p="AltUnityComponent.cs" t="Include" />
-              <e p="AltUnityFieldsSelections.cs" t="Include" />
-              <e p="AltUnityMethodSelection.cs" t="Include" />
-              <e p="AltUnityObject.cs" t="Include" />
-              <e p="AltUnityObjectLight.cs" t="Include" />
-              <e p="AltUnityObjectProperty.cs" t="Include" />
-              <e p="AltUnityPropertiesSelections.cs" t="Include" />
-              <e p="AltUnityProperty.cs" t="Include" />
-              <e p="AltUnityTextureInformation.cs" t="Include" />
-              <e p="AltUnityType.cs" t="Include" />
-            </e>
-            <e p="AltUnityDevice.cs" t="Include" />
-            <e p="AltUnityDriver.cs" t="Include" />
-            <e p="AltUnityExceptions.cs" t="Include" />
-            <e p="AltUnityPortForwarding.cs" t="Include" />
-            <e p="Commands" t="Include">
-              <e p="AltBaseCommand.cs" t="Include" />
-              <e p="AltUnityCommandReturningAltElement.cs" t="Include" />
-              <e p="AltUnityCommands" t="Include">
-                <e p="AltUnitySetServerLogging.cs" t="Include" />
-              </e>
-              <e p="AltUnityEnableLogging.cs" t="Include" />
-              <e p="AltUnityGetPNGScreenshot.cs" t="Include" />
-              <e p="AltUnityGetScreenshot.cs" t="Include" />
-              <e p="AltUnityGetServerVersion.cs" t="Include" />
-              <e p="AltUnityStopCommand.cs" t="Include" />
-              <e p="AltUnitySyncCommand.cs" t="Include" />
-              <e p="FindObjects" t="Include">
-                <e p="AltUnityBaseFindObjects.cs" t="Include" />
-                <e p="AltUnityFindObject.cs" t="Include" />
-                <e p="AltUnityFindObjects.cs" t="Include" />
-                <e p="AltUnityFindObjectsWhichContain.cs" t="Include" />
-                <e p="AltUnityFindObjectWhichContains.cs" t="Include" />
-                <e p="AltUnityGetAllElements.cs" t="Include" />
-                <e p="AltUnityGetAllElementsLight.cs" t="Include" />
-                <e p="AltUnityGetAllLoadedScenesAndObjects.cs" t="Include" />
-                <e p="AltUnityWaitForObject.cs" t="Include" />
-                <e p="AltUnityWaitForObjectNotBePresent.cs" t="Include" />
-                <e p="AltUnityWaitForObjectWhichContains.cs" t="Include" />
-                <e p="AltUnityWaitForObjectWithText.cs" t="Include" />
-              </e>
-              <e p="InputActions" t="Include">
-                <e p="AltUnityMoveMouse.cs" t="Include" />
-                <e p="AltUnityMoveMouseAndWait.cs" t="Include" />
-                <e p="AltUnityMultipointSwipe.cs" t="Include" />
-                <e p="AltUnityMultipointSwipeAndWait.cs" t="Include" />
-                <e p="AltUnityPressKey.cs" t="Include" />
-                <e p="AltUnityPressKeyAndWait.cs" t="Include" />
-                <e p="AltUnityScrollMouse.cs" t="Include" />
-                <e p="AltUnityScrollMouseAndWait.cs" t="Include" />
-                <e p="AltUnitySwipe.cs" t="Include" />
-                <e p="AltUnitySwipeAndWait.cs" t="Include" />
-                <e p="AltUnityTapCustom.cs" t="Include" />
-                <e p="AltUnityTapScreen.cs" t="Include" />
-                <e p="AltUnityTilt.cs" t="Include" />
-                <e p="AltUnityTiltAndWait.cs" t="Include" />
-              </e>
-              <e p="ObjectCommands" t="Include">
-                <e p="AltUnityCallComponentMethod.cs" t="Include" />
-                <e p="AltUnityCallStaticMethods.cs" t="Include" />
-                <e p="AltUnityClickEvent.cs" t="Include" />
-                <e p="AltUnityDragObject.cs" t="Include" />
-                <e p="AltUnityDropObject.cs" t="Include" />
-                <e p="AltUnityGetAllComponents.cs" t="Include" />
-                <e p="AltUnityGetAllFields.cs" t="Include" />
-                <e p="AltUnityGetAllMethods.cs" t="Include" />
-                <e p="AltUnityGetAllProperties.cs" t="Include" />
-                <e p="AltUnityGetComponentProperty.cs" t="Include" />
-                <e p="AltUnityGetText.cs" t="Include" />
-                <e p="AltUnityObjectAction.cs" t="Include" />
-                <e p="AltUnityPointerDownFromObject.cs" t="Include" />
-                <e p="AltUnityPointerEnterObject.cs" t="Include" />
-                <e p="AltUnityPointerExitObject.cs" t="Include" />
-                <e p="AltUnityPointerUpFromObject.cs" t="Include" />
-                <e p="AltUnitySetComponentProperty.cs" t="Include" />
-                <e p="AltUnitySetText.cs" t="Include" />
-                <e p="AltUnityTap.cs" t="Include" />
-              </e>
-              <e p="UnityCommands" t="Include">
-                <e p="AltUnityDeleteKeyPlayerPref.cs" t="Include" />
-                <e p="AltUnityDeletePlayerPref.cs" t="Include" />
-                <e p="AltUnityGetAllActiveCameras.cs" t="Include" />
-                <e p="AltUnityGetAllCameras.cs" t="Include" />
-                <e p="AltUnityGetAllLoadedScenes.cs" t="Include" />
-                <e p="AltUnityGetAllScenes.cs" t="Include" />
-                <e p="AltUnityGetCurrentScene.cs" t="Include" />
-                <e p="AltUnityGetFloatKeyPlayerPref.cs" t="Include" />
-                <e p="AltUnityGetIntKeyPLayerPref.cs" t="Include" />
-                <e p="AltUnityGetStringKeyPlayerPref.cs" t="Include" />
-                <e p="AltUnityGetTimeScale.cs" t="Include" />
-                <e p="AltUnityLoadScene.cs" t="Include" />
-                <e p="AltUnitySetKeyPLayerPref.cs" t="Include" />
-                <e p="AltUnitySetTimeScale.cs" t="Include" />
-                <e p="AltUnityUnloadScene.cs" t="Include" />
-                <e p="AltUnityWaitForCurrentSceneToBe.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Logging" t="Include">
-              <e p="AltUnityLogger.cs" t="Include" />
-              <e p="AltUnityLogLevel.cs" t="Include" />
-              <e p="AltUnityLogLevelExtensions.cs" t="Include" />
-              <e p="DriverLogManager.cs" t="Include" />
-              <e p="UnityTarget.cs" t="Include" />
-            </e>
-            <e p="SocketSettings.cs" t="Include" />
-            <e p="UnityStruct" t="Include">
-              <e p="AltUnityColor.cs" t="Include" />
-              <e p="AltUnityKeyCode.cs" t="Include" />
-              <e p="AltUnityTextureFormat.cs" t="Include" />
-              <e p="AltUnityVector.cs" t="Include" />
-              <e p="PLayerPrefKeyType.cs" t="Include" />
-            </e>
-          </e>
-          <e p="AltUnityServer" t="Include">
-            <e p="AltSocket" t="Include">
-              <e p="AltClientSocketHandler.cs" t="Include" />
-              <e p="AltResponseQueue.cs" t="Include" />
-              <e p="AltSocketServer.cs" t="Include" />
-            </e>
-            <e p="AltUnityErrors.cs" t="Include" />
-            <e p="AltUnityId.cs" t="Include" />
-            <e p="AltUnityMockUpPointerInputModule.cs" t="Include" />
-            <e p="AltUnityRunner.cs" t="Include" />
-            <e p="AltUnityTextureScale.cs" t="Include" />
-            <e p="Commands" t="Include">
-              <e p="AltUnityCommand.cs" t="Include" />
-              <e p="AltUnityCommands" t="Include">
-                <e p="AltUnityEnableLoggingCommand.cs" t="Include" />
-                <e p="AltUnityErrorCommand.cs" t="Include" />
-                <e p="AltUnityGetServerVersionCommand.cs" t="Include" />
-                <e p="AltUnityGetServerVersionCommandBackwardsCompatible.cs" t="Include" />
-                <e p="AltUnitySetServerLoggingCommand.cs" t="Include" />
-                <e p="AltUnityUnknowStringCommand.cs" t="Include" />
-              </e>
-              <e p="FindObject" t="Include">
-                <e p="AltUnityBaseClassFindObjectsCommand.cs" t="Include" />
-                <e p="AltUnityFindActiveObjectsByNameCommand.cs" t="Include" />
-                <e p="AltUnityFindObjectCommand.cs" t="Include" />
-                <e p="AltUnityFindObjectsCommand.cs" t="Include" />
-                <e p="AltUnityFindObjectsLightCommand.cs" t="Include" />
-                <e p="AltUnityGetAllCamerasCommand.cs" t="Include" />
-                <e p="AltUnityGetAllLoadedScenesAndObjectsCommand.cs" t="Include" />
-                <e p="AltUnityGetAllScenesCommand.cs" t="Include" />
-                <e p="AltUnityGetCurrentSceneCommand.cs" t="Include" />
-              </e>
-              <e p="InputActions" t="Include">
-                <e p="AltUnityActionFinishedCommand.cs" t="Include" />
-                <e p="AltUnityClickEventCommand.cs" t="Include" />
-                <e p="AltUnityClickOnScreenAtXyCommand.cs" t="Include" />
-                <e p="AltUnityClickOnScreenCustom.cs" t="Include" />
-                <e p="AltUnityDragObjectCommand.cs" t="Include" />
-                <e p="AltUnityDropObjectCommand.cs" t="Include" />
-                <e p="AltUnityHoldButtonCommand.cs" t="Include" />
-                <e p="AltUnityMoveMouseCommand.cs" t="Include" />
-                <e p="AltUnityPointerDownFromObjectCommand.cs" t="Include" />
-                <e p="AltUnityPointerEnterObjectCommand.cs" t="Include" />
-                <e p="AltUnityPointerExitObjectCommand.cs" t="Include" />
-                <e p="AltUnityPointerUpFromObjectCommand.cs" t="Include" />
-                <e p="AltUnityScrollMouseCommand.cs" t="Include" />
-                <e p="AltUnitySetMovingTouchCommand.cs" t="Include" />
-                <e p="AltUnitySetMultipointSwipeChainCommand.cs" t="Include" />
-                <e p="AltUnityTapCommand.cs" t="Include" />
-                <e p="AltUnityTiltCommand.cs" t="Include" />
-              </e>
-              <e p="ObjectCommands" t="Include">
-                <e p="AltUnityCallComponentMethodForObjectCommand.cs" t="Include" />
-                <e p="AltUnityContractResolver.cs" t="Include" />
-                <e p="AltUnityGetAllComponentsCommand.cs" t="Include" />
-                <e p="AltUnityGetAllFieldsCommand.cs" t="Include" />
-                <e p="AltUnityGetAllMethodsCommand.cs" t="Include" />
-                <e p="AltUnityGetAllPropertiesCommand.cs" t="Include" />
-                <e p="AltUnityGetComponentPropertyCommand.cs" t="Include" />
-                <e p="AltUnityGetTextCommand.cs" t="Include" />
-                <e p="AltUnityReflectionMethodsCommand.cs" t="Include" />
-                <e p="AltUnitySetObjectComponentPropertyCommand.cs" t="Include" />
-                <e p="AltUnitySetTextCommand.cs" t="Include" />
-              </e>
-              <e p="Screenshot" t="Include">
-                <e p="AltUnityBaseScreenshotCommand.cs" t="Include" />
-                <e p="AltUnityGetScreenshotCommand.cs" t="Include" />
-                <e p="AltUnityGetScreenshotPNGCommand.cs" t="Include" />
-                <e p="AltUnityHighlightSelectedObjectCommand.cs" t="Include" />
-                <e p="AltUnityHightlightObjectFromCoordinatesCommand.cs" t="Include" />
-              </e>
-              <e p="UnityCommands" t="Include">
-                <e p="AltUnityDeleteKeyPlayerPrefCommand.cs" t="Include" />
-                <e p="AltUnityDeletePlayerPrefCommand.cs" t="Include" />
-                <e p="AltUnityGetAllLoadedScenesCommand.cs" t="Include" />
-                <e p="AltUnityGetKeyPlayerPrefCommand.cs" t="Include" />
-                <e p="AltUnityGetTimeScaleCommand.cs" t="Include" />
-                <e p="AltUnityLoadSceneCommand.cs" t="Include" />
-                <e p="AltUnitySetKeyPlayerPrefCommand.cs" t="Include" />
-                <e p="AltUnitySetTimeScaleCommand.cs" t="Include" />
-                <e p="AltUnityUnloadSceneCommand.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Input.cs" t="Include" />
-            <e p="Logging" t="Include">
-              <e p="ServerLogManager.cs" t="Include" />
-            </e>
-            <e p="UI" t="Include">
-              <e p="AltUnityInputMark.cs" t="Include" />
-              <e p="AltUnityInputsVisualiser.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Editor" t="Include">
-            <e p="AltUnityBuilder.cs" t="Include" />
-            <e p="AltUnityEditorConfiguration.cs" t="Include" />
-            <e p="AltUnityInspectorPage.cs" t="Include" />
-            <e p="AltUnityMyDevices.cs" t="Include" />
-            <e p="AltUnityMyScenes.cs" t="Include" />
-            <e p="AltUnityMyTest.cs" t="Include" />
-            <e p="AltUnityPlatform.cs" t="Include" />
-            <e p="AltUnityPortHandler.cs" t="Include" />
-            <e p="AltUnityTesterEditor.cs" t="Include" />
-            <e p="AltUnityTestRunListener.cs" t="Include" />
-            <e p="AltUnityTestRunner.cs" t="Include" />
-            <e p="DefaultTestExample.txt" t="Include" />
-            <e p="Logging" t="Include">
-              <e p="EditorLogManager.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Examples" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="AltUnityExampleScriptActiveStateToggler.cs" t="Include" />
-              <e p="AltUnityExampleScriptCameraViewControl.cs" t="Include" />
-              <e p="AltUnityExampleScriptCapsule.cs" t="Include" />
-              <e p="AltUnityExampleScriptCubeController.cs" t="Include" />
-              <e p="AltUnityExampleScriptDebugController.cs" t="Include" />
-              <e p="AltUnityExampleScriptDestroyObject.cs" t="Include" />
-              <e p="AltUnityExampleScriptDragMe.cs" t="Include" />
-              <e p="AltUnityExampleScriptDragPanel.cs" t="Include" />
-              <e p="AltUnityExampleScriptDropMe.cs" t="Include" />
-              <e p="AltUnityExampleScriptGameLogicController.cs" t="Include" />
-              <e p="AltUnityExampleScriptIncrementOnClick.cs" t="Include" />
-              <e p="AltUnityExampleScriptNextSceneButtonController.cs" t="Include" />
-              <e p="AltUnityExampleScriptPanel.cs" t="Include" />
-              <e p="AltUnityExampleScriptPlayer2Controller.cs" t="Include" />
-              <e p="AltUnityExampleScriptResizePanel.cs" t="Include" />
-              <e p="AltUnityExampleScriptStarController.cs" t="Include" />
-              <e p="AltUnityExampleScriptStarCounter.cs" t="Include" />
-              <e p="AltUnityInheritedFields.cs" t="Include" />
-              <e p="AltUnitySampleClass.cs" t="Include" />
-            </e>
-            <e p="Test" t="Include">
-              <e p="Editor" t="Include">
-                <e p="Commands" t="Include">
-                  <e p="AltUnityCommandsTests.cs" t="Include" />
-                </e>
-                <e p="Testforscene1TestSample.cs" t="Include" />
-                <e p="TestForscene2DraggablePanel.cs" t="Include" />
-                <e p="TestForScene3DragAndDrop.cs" t="Include" />
-                <e p="TestForScene4NoCameras.cs" t="Include" />
-                <e p="TestForScene5KeyboardAndMouseInput.cs" t="Include" />
-                <e p="unit" t="Include">
-                  <e p="AltUnityServer" t="Include">
-                    <e p="TestAltClientSocketHandler.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-            </e>
-          </e>
-          <e p="ReadMe.txt" t="Include" />
-          <e p="Shader" t="Include">
-            <e p="OutlineShader.shader" t="Include" />
+            <e p="UnityDumper.cs" t="Include" />
+            <e p="VRSupport.cs" t="Include" />
           </e>
         </e>
         <e p="Plugins" t="Include">
@@ -905,119 +613,6 @@
                     <e p="SceneContextEventsTester.cs" t="Include" />
                   </e>
                 </e>
-                <e p="Tests" t="Include">
-                  <e p="Bindings" t="Include">
-                    <e p="TestDiContainerMethods" t="Include">
-                      <e p="TestDiContainerMethods.cs" t="Include" />
-                    </e>
-                    <e p="TestFromComponent" t="Include">
-                      <e p="TestFromComponentOn.cs" t="Include" />
-                      <e p="TestFromNewComponentOn.cs" t="Include" />
-                    </e>
-                    <e p="TestFromComponentInChildren" t="Include">
-                      <e p="TestFromComponentInChildren.cs" t="Include" />
-                    </e>
-                    <e p="TestFromComponentInHierarchy" t="Include">
-                      <e p="TestFromComponentInHierarchy.cs" t="Include" />
-                    </e>
-                    <e p="TestFromComponentInHierarchyGameObjectContext" t="Include">
-                      <e p="TestFromComponentInHierarchyGameObjectContext.cs" t="Include" />
-                    </e>
-                    <e p="TestFromComponentInParents" t="Include">
-                      <e p="TestFromComponentInParents.cs" t="Include" />
-                    </e>
-                    <e p="TestFromComponentInSiblings" t="Include">
-                      <e p="TestFromComponentInSiblings.cs" t="Include" />
-                    </e>
-                    <e p="TestFromGameObject" t="Include">
-                      <e p="TestFromGameObject.cs" t="Include" />
-                    </e>
-                    <e p="TestFromGameObjectInstaller" t="Include">
-                      <e p="TestFromGameObjectInstaller.cs" t="Include" />
-                    </e>
-                    <e p="TestFromNewScriptableObjectResource" t="Include">
-                      <e p="TestFromNewScriptableObjectResource.cs" t="Include" />
-                    </e>
-                    <e p="TestFromPrefab" t="Include">
-                      <e p="TestFromPrefab.cs" t="Include" />
-                    </e>
-                    <e p="TestFromPrefabInstaller" t="Include">
-                      <e p="TestFromPrefabInstaller.cs" t="Include" />
-                    </e>
-                    <e p="TestFromPrefabResource" t="Include">
-                      <e p="TestFromPrefabResource.cs" t="Include" />
-                    </e>
-                    <e p="TestFromResource" t="Include">
-                      <e p="TestFromResource.cs" t="Include" />
-                    </e>
-                    <e p="TestFromSiblingComponent" t="Include">
-                      <e p="TestFromSiblingComponent.cs" t="Include" />
-                    </e>
-                    <e p="TestFromSubContainerPrefab" t="Include">
-                      <e p="TestFromSubContainerPrefab.cs" t="Include" />
-                    </e>
-                    <e p="TestFromSubContainerPrefabResource" t="Include">
-                      <e p="TestFromSubContainerPrefabResource.cs" t="Include" />
-                    </e>
-                    <e p="TestInstantiateCallback" t="Include">
-                      <e p="TestInstantiateCallback.cs" t="Include" />
-                    </e>
-                    <e p="TestLazy" t="Include">
-                      <e p="TestLazy.cs" t="Include" />
-                    </e>
-                  </e>
-                  <e p="Factories" t="Include">
-                    <e p="PrefabFactory" t="Include">
-                      <e p="TestPrefabFactory.cs" t="Include" />
-                    </e>
-                    <e p="TestBindFactory" t="Include">
-                      <e p="TestBindFactory.cs" t="Include" />
-                    </e>
-                    <e p="TestBindFactoryFive" t="Include">
-                      <e p="TestBindFactoryFive.cs" t="Include" />
-                    </e>
-                    <e p="TestBindFactoryOne" t="Include">
-                      <e p="TestBindFactoryOne.cs" t="Include" />
-                    </e>
-                    <e p="TestMemoryPools" t="Include">
-                      <e p="TestMemoryPool1.cs" t="Include" />
-                    </e>
-                  </e>
-                  <e p="Installers" t="Include">
-                    <e p="TestInstallers" t="Include">
-                      <e p="TestInstallers.cs" t="Include" />
-                    </e>
-                    <e p="TestMonoInstallers" t="Include">
-                      <e p="TestMonoInstallers.cs" t="Include" />
-                    </e>
-                    <e p="TestScriptableObjectInstallers" t="Include">
-                      <e p="TestScriptableObjectInstallers.cs" t="Include" />
-                    </e>
-                  </e>
-                  <e p="IntegrationTestTester" t="Include">
-                    <e p="TestIntegrationTest.cs" t="Include" />
-                  </e>
-                  <e p="Misc" t="Include">
-                    <e p="TestAnimationStateBehaviourInject" t="Include">
-                      <e p="TestAnimationStateBehaviourInject.cs" t="Include" />
-                    </e>
-                    <e p="TestMonoKernelDecoration" t="Include">
-                      <e p="DelayedInitializeKernel.cs" t="Include" />
-                      <e p="KernelDecoratorInstaller.cs" t="Include" />
-                      <e p="TestMonoKernelDecoration.cs" t="Include" />
-                    </e>
-                    <e p="TestZenAutoInjecter" t="Include">
-                      <e p="TestZenAutoInjecter.cs" t="Include" />
-                    </e>
-                  </e>
-                  <e p="SceneTests" t="Include">
-                    <e p="TestSceneContextEvents.cs" t="Include" />
-                  </e>
-                  <e p="Util" t="Include">
-                    <e p="FixtureUtil.cs" t="Include" />
-                  </e>
-                  <e p="Zenject-IntegrationTests-Editor.asmdef" t="Include" />
-                </e>
                 <e p="Zenject-IntegrationTests.asmdef" t="Include" />
               </e>
               <e p="MemoryPoolMonitor" t="Include">
@@ -1183,155 +778,6 @@
                 <e p="ZenjectIntegrationTestFixture.cs" t="Include" />
                 <e p="ZenjectTestUtil.cs" t="Include" />
                 <e p="ZenjectUnitTestFixture.cs" t="Include" />
-              </e>
-              <e p="UnitTests" t="Include">
-                <e p="Editor" t="Include">
-                  <e p="BindFeatures" t="Include">
-                    <e p="TestBindingInheritanceMethod.cs" t="Include" />
-                    <e p="TestConcreteIdentifier.cs" t="Include" />
-                    <e p="TestIfNotBound.cs" t="Include" />
-                    <e p="TestMoveIntoAllSubContainers.cs" t="Include" />
-                    <e p="TestMoveIntoDirectSubContainers.cs" t="Include" />
-                    <e p="TestMultipleContractTypes.cs" t="Include" />
-                    <e p="TestMultipleContractTypes2.cs" t="Include" />
-                    <e p="TestMultipleContractTypes3.cs" t="Include" />
-                    <e p="TestNonLazy.cs" t="Include" />
-                    <e p="TestRebind.cs" t="Include" />
-                    <e p="TestUnbind.cs" t="Include" />
-                    <e p="TestWithArguments.cs" t="Include" />
-                  </e>
-                  <e p="Bindings" t="Include">
-                    <e p="TestFrom.cs" t="Include" />
-                    <e p="TestFromFactory.cs" t="Include" />
-                    <e p="TestFromGetter.cs" t="Include" />
-                    <e p="TestFromIFactory.cs" t="Include" />
-                    <e p="TestFromIFactory2.cs" t="Include" />
-                    <e p="TestFromInstance.cs" t="Include" />
-                    <e p="TestFromMethod.cs" t="Include" />
-                    <e p="TestFromMethodMultiple.cs" t="Include" />
-                    <e p="TestFromMethodMultipleUntyped.cs" t="Include" />
-                    <e p="TestFromResolve.cs" t="Include" />
-                    <e p="TestFromSubContainerInstaller.cs" t="Include" />
-                    <e p="TestFromSubContainerInstance.cs" t="Include" />
-                    <e p="TestFromSubContainerInstanceGetter.cs" t="Include" />
-                    <e p="TestFromSubContainerMethod.cs" t="Include" />
-                    <e p="TestNonGeneric.cs" t="Include" />
-                    <e p="TestWithKernel.cs" t="Include" />
-                  </e>
-                  <e p="Conditions" t="Include">
-                    <e p="TestConditionsBasic.cs" t="Include" />
-                    <e p="TestConditionsComplex.cs" t="Include" />
-                    <e p="TestConditionsFieldName.cs" t="Include" />
-                    <e p="TestConditionsIdentifier.cs" t="Include" />
-                    <e p="TestConditionsParents.cs" t="Include" />
-                    <e p="TestConditionsTarget.cs" t="Include" />
-                    <e p="TestConditionsTargetInstance.cs" t="Include" />
-                    <e p="TestIdentifiers.cs" t="Include" />
-                    <e p="TestIdentifierTypes.cs" t="Include" />
-                  </e>
-                  <e p="Conventions" t="Include">
-                    <e p="Foo.cs" t="Include" />
-                    <e p="FooMore.cs" t="Include" />
-                    <e p="TestConvention.cs" t="Include" />
-                    <e p="TestConvention2.cs" t="Include" />
-                    <e p="TestConventionNames.cs" t="Include" />
-                  </e>
-                  <e p="Factories" t="Include">
-                    <e p="Bindings" t="Include">
-                      <e p="TestFactoryFrom0.cs" t="Include" />
-                      <e p="TestFactoryFrom1.cs" t="Include" />
-                      <e p="TestFactoryFrom5.cs" t="Include" />
-                      <e p="TestFactoryFromFactory0.cs" t="Include" />
-                      <e p="TestFactoryFromFactory1.cs" t="Include" />
-                      <e p="TestFactoryFromGetter0.cs" t="Include" />
-                      <e p="TestFactoryFromInstance0.cs" t="Include" />
-                      <e p="TestFactoryFromMethod0.cs" t="Include" />
-                      <e p="TestFactoryFromMethod1.cs" t="Include" />
-                      <e p="TestFactoryFromResolve0.cs" t="Include" />
-                      <e p="TestFactoryFromSubContainerInstaller0.cs" t="Include" />
-                      <e p="TestFactoryFromSubContainerInstaller1.cs" t="Include" />
-                      <e p="TestFactoryFromSubContainerMethod0.cs" t="Include" />
-                      <e p="TestFactoryFromSubContainerMethod1.cs" t="Include" />
-                      <e p="TestFactoryWithArguments.cs" t="Include" />
-                    </e>
-                    <e p="IFactory" t="Include">
-                      <e p="TestIFactory.cs" t="Include" />
-                    </e>
-                    <e p="TestFactory.cs" t="Include" />
-                  </e>
-                  <e p="Injection" t="Include">
-                    <e p="TestAllInjectionTypes.cs" t="Include" />
-                    <e p="TestBaseClassPropertyInjection.cs" t="Include" />
-                    <e p="TestCircularDependencies.cs" t="Include" />
-                    <e p="TestConstructorInjection.cs" t="Include" />
-                    <e p="TestConstructorInjectionOptional.cs" t="Include" />
-                    <e p="TestDuplicateInjection.cs" t="Include" />
-                    <e p="TestInjectSources.cs" t="Include" />
-                    <e p="TestListInjection.cs" t="Include" />
-                    <e p="TestNullableValues.cs" t="Include" />
-                    <e p="TestParameters.cs" t="Include" />
-                    <e p="TestPostInjectCall.cs" t="Include" />
-                    <e p="TestPostInjectParameters.cs" t="Include" />
-                    <e p="TestPropertyInjection.cs" t="Include" />
-                    <e p="TestStructInjection.cs" t="Include" />
-                    <e p="TestTestOptional.cs" t="Include" />
-                  </e>
-                  <e p="MemoryPool" t="Include">
-                    <e p="TestArrayPool.cs" t="Include" />
-                    <e p="TestDisposeBlock.cs" t="Include" />
-                    <e p="TestFromPoolableMemoryPoolOne.cs" t="Include" />
-                    <e p="TestFromPoolableMemoryPoolSix.cs" t="Include" />
-                    <e p="TestFromPoolableMemoryPoolValidation.cs" t="Include" />
-                    <e p="TestFromPoolableMemoryPoolZero.cs" t="Include" />
-                    <e p="TestMemoryPool0.cs" t="Include" />
-                    <e p="TestMemoryPoolCustomFactory.cs" t="Include" />
-                    <e p="TestPoolableStaticMemoryPool.cs" t="Include" />
-                    <e p="TestStaticMemoryPool.cs" t="Include" />
-                  </e>
-                  <e p="Other" t="Include">
-                    <e p="TestAllocs.cs" t="Include" />
-                    <e p="TestAsSingle.cs" t="Include" />
-                    <e p="TestBindCallbacks.cs" t="Include" />
-                    <e p="TestCircularDependencies.cs" t="Include" />
-                    <e p="TestClearCacheProvider.cs" t="Include" />
-                    <e p="TestCustomInjectAttribute.cs" t="Include" />
-                    <e p="TestDecorators.cs" t="Include" />
-                    <e p="TestDecoratorValidation.cs" t="Include" />
-                    <e p="TestFacadeSubContainer.cs" t="Include" />
-                    <e p="TestFactoryMemoryPoolCustomInterface.cs" t="Include" />
-                    <e p="TestGenericContract.cs" t="Include" />
-                    <e p="TestKeyedFactoryExample.cs" t="Include" />
-                    <e p="TestLazy.cs" t="Include" />
-                    <e p="TestNestedContainer.cs" t="Include" />
-                    <e p="TestPoolableManager.cs" t="Include" />
-                    <e p="TestResolve.cs" t="Include" />
-                    <e p="TestResolveMany.cs" t="Include" />
-                    <e p="TestSubContainers.cs" t="Include" />
-                    <e p="TestSubContainers4.cs" t="Include" />
-                    <e p="TestTaskUpdater.cs" t="Include" />
-                    <e p="TestTestUtil.cs" t="Include" />
-                    <e p="TestTransientMockProvider.cs" t="Include" />
-                    <e p="TestValidation.cs" t="Include" />
-                    <e p="TestValidationSettings.cs" t="Include" />
-                    <e p="ZenjectProfileTest.cs" t="Include" />
-                  </e>
-                  <e p="Profiling" t="Include">
-                    <e p="TestInstantiateApproaches.cs" t="Include" />
-                  </e>
-                  <e p="Signals" t="Include">
-                    <e p="TestAsyncSignals.cs" t="Include" />
-                    <e p="TestBindSignal.cs" t="Include" />
-                    <e p="TestSignalIdentifiers.cs" t="Include" />
-                    <e p="TestSignalRuntimeDeclaration.cs" t="Include" />
-                    <e p="TestSignals1.cs" t="Include" />
-                    <e p="TestSignalsAdvanced.cs" t="Include" />
-                  </e>
-                  <e p="Util" t="Include">
-                    <e p="TestListComparer.cs" t="Include" />
-                  </e>
-                  <e p="Zenject-UnitTests-Editor.asmdef" t="Include" />
-                </e>
-                <e p="ReadMe.txt" t="Include" />
               </e>
             </e>
             <e p="Source" t="Include">
@@ -1725,9 +1171,6 @@
             <e p="EditMode.asmdef" t="Include" />
             <e p="EditModeTestScript.cs" t="Include" />
           </e>
-          <e p="Editor" t="Include">
-            <e p="AltUnityTest.cs" t="Include" />
-          </e>
           <e p="PlayMode" t="Include">
             <e p="PlayMode.asmdef" t="Include" />
             <e p="PlayModeTestScript.cs" t="Include" />
@@ -1770,7 +1213,7 @@
       <e p="Packages" t="ExcludeRecursive" />
       <e p="PlayMode.csproj" t="IncludeRecursive" />
       <e p="ProjectScripts.csproj" t="IncludeRecursive" />
-      <e p="Temp/Bin" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="UniRx.csproj" t="IncludeRecursive" />
       <e p="UniTask.Addressables.csproj" t="IncludeRecursive" />
       <e p="UniTask.csproj" t="IncludeRecursive" />
@@ -1780,16 +1223,11 @@
       <e p="UniTask.TextMeshPro.csproj" t="IncludeRecursive" />
       <e p="UnityTemplate.sln" t="IncludeFlat" />
       <e p="Zenject-Editor.csproj" t="IncludeRecursive" />
-      <e p="Zenject-IntegrationTests-Editor.csproj" t="IncludeRecursive" />
       <e p="Zenject-IntegrationTests.csproj" t="IncludeRecursive" />
       <e p="Zenject-PoolMonitor-Editor.csproj" t="IncludeRecursive" />
       <e p="Zenject-ReflectionBaking-Editor.csproj" t="IncludeRecursive" />
       <e p="Zenject-TestFramework.csproj" t="IncludeRecursive" />
-      <e p="Zenject-UnitTests-Editor.csproj" t="IncludeRecursive" />
       <e p="Zenject.csproj" t="IncludeRecursive" />
     </e>
-    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_UnityTemplate.-693893997.00" t="ExcludeRecursive" />
   </component>
 </project>

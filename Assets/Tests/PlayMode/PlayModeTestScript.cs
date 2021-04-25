@@ -1,19 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
+using Main;
 using NUnit.Framework;
+using Root;
 using Start;
 using UnityEngine;
+using UnityEngine.Assertions;
+using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using Utility;
+using Zenject;
+using Assert = NUnit.Framework.Assert;
+using Debug = Utility.Debug;
 
-public class PlayModeTestScript
+public class PlayModeTestScript: ZenjectIntegrationTestFixture
 {
+    [Inject]
+    private ISceneManagerEx sm;
+
+    [SetUp]
+    public async void SetUp()
+    {
+        PreInstall();
+        PostInstall();
+        await sm.LoadSceneAsync<RootScene>(null, LoadSceneMode.Single);
+        await sm.LoadSceneAsync<StartScene>();
+    }
     // A Test behaves as an ordinary method
     [Test]
     public void PlayModeTestScriptSimplePasses()
     {
         // Use the Assert class to test conditions
-        
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
@@ -23,7 +42,8 @@ public class PlayModeTestScript
     {
         // Use the Assert class to test conditions.
         // Use yield to skip a frame.
-        yield return new WaitForSeconds(1f);
-        Assert.AreEqual("StartScene", SceneManagerEx.Instance.GetScene<StartScene>().name);
+        yield return new WaitForSeconds(5f);
+        Assert.IsNotNull(sm.GetScene<StartScene>());
+        Assert.IsNull(sm.GetScene<MainScene>());
     }
 }

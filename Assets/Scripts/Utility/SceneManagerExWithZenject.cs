@@ -9,7 +9,7 @@ namespace Utility
   public class SceneManagerExWithZenject : MonoBehaviour, ISceneManagerEx
   {
 
-    [SerializeField] private List<SceneEx> activeScenes = new List<SceneEx>();
+    private HashSet<SceneEx> activeScenes = new HashSet<SceneEx>();
     [SerializeField] GameObject goLoadingBarrier;
 
     void Awake()
@@ -58,16 +58,20 @@ namespace Utility
 
     public T GetScene<T>() where T : SceneEx
     {
-      for (int i = 0; i < activeScenes.Count; i++)
+      foreach (var scene in activeScenes)
       {
-        var scene = activeScenes[i];
         if (scene is T)
         {
           return (T) scene;
-        }
+        } 
       }
-
       return null;
+    }
+
+    public void SetScene<T>() where T : SceneEx
+    {
+      var scene = FindObjectOfType<T>();
+      activeScenes.Add(scene);
     }
   }
 }

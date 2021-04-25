@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using Utility;
+using Zenject;
 
-public class EditModeTestScript
+public class EditModeTestScript: ZenjectUnitTestFixture
 {
     // A Test behaves as an ordinary method
     [Test]
     public void EditModeTestScriptSimplePasses()
     {
+
         // Use the Assert class to test conditions
         Assert.AreEqual(1, 1);
     }
