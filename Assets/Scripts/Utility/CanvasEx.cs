@@ -1,21 +1,17 @@
-using System;
 using System.Linq;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Object = UnityEngine.Object;
 
 namespace Utility
 {
   public abstract class CanvasEx : MonoBehaviour
   {
-    public TextMeshProUGUI title;
 
     protected virtual void Start()
     {
       InitAtStart();
     }
-    
+
     public void ShowCanvas()
     {
       gameObject.SetActive(true);
@@ -31,7 +27,7 @@ namespace Utility
     {
       /* do nothing */
     }
-    
+
     protected virtual void InitAtStart()
     {
       /* do nothing */
@@ -40,6 +36,14 @@ namespace Utility
     public Canvas GetCanvas()
     {
       return gameObject.GetComponent<Canvas>();
+    }
+
+    public static Canvas GetCanvasFromScene(string sceneName)
+    {
+      var canvas = SceneManager.GetSceneByName(sceneName).GetRootGameObjects()
+        .First(obj => obj.GetComponent<Canvas>() != null)
+        .GetComponent<Canvas>();
+      return canvas;
     }
   }
 }

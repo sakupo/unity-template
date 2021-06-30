@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
+using Root;
+using Start;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,16 +27,18 @@ namespace Utility
       goLoadingBarrier.SetActive(false);
     }
 
-    private void Start()
+    private async void Start()
     {
       // 初期シーンの登録
-      if (activeScenes.Count == 0)
+      var scenes = FindObjectsOfType<SceneEx>();
+      foreach (var scene in scenes)
       {
-        var scenes = Resources.FindObjectsOfTypeAll<SceneEx>();
-        foreach (var scene in scenes)
-        {
-          activeScenes.Add(scene);
-        }
+        activeScenes.Add(scene);
+      }
+      // RootSceneだけHierarchy上にある場合の追加初期シーンの定義
+      if (activeScenes.Count == 1 && GetScene<RootScene>() != null)
+      {
+        await LoadSceneAsync<StartScene>();
       }
     }
     
