@@ -1,20 +1,28 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using Utility;
+using Utility.Binary;
 using Zenject;
 
 public class EditModeTestScript: ZenjectUnitTestFixture
 {
     // A Test behaves as an ordinary method
     [Test]
-    public void EditModeTestScriptSimplePasses()
+    public void crc32Test()
     {
 
         // Use the Assert class to test conditions
-        Assert.AreEqual(1, 1);
+        Crc32 crc32 = new Crc32();
+        string hash = "";
+        var str = BinUtil.StringToBytes("The quick brown fox jumps over the lazy dog");
+        var b = crc32.ComputeHash(str);
+
+        Console.WriteLine("CRC-32 is {0}", hash);
+        Assert.AreEqual("414FA339", BinUtil.BytesToByteString(b));
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
