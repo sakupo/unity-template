@@ -23,6 +23,20 @@ namespace Utility.Binary
       return str;
     }
 
+    public static void AddBytes(List<byte> list, string str)
+    {
+      AddBytes(list, StringToBytes(str));
+    }
+
+    public static void AddBytes(List<byte> list, int num)
+    {
+      int mask = 0x000000FF;
+      for (int i = 0; i < 4; i++)
+      {
+        list.Add(Convert.ToByte((num >> 8*i) & mask));
+      }
+    }
+
     public static void AddBytes(List<byte> list, byte[] bytes)
     {
       foreach (var b in bytes)

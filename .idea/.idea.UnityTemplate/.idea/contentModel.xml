@@ -1142,7 +1142,17 @@
           <e p="Socket" t="Include">
             <e p="ClientEvent.cs" t="Include" />
             <e p="ClientEvents" t="Include">
+              <e p="ActionEvent.cs" t="Include" />
+              <e p="CreateEvent.cs" t="Include" />
+              <e p="ErrorEvent.cs" t="Include" />
+              <e p="ExitEvent.cs" t="Include" />
+              <e p="FinishEvent.cs" t="Include" />
               <e p="HelloEvent.cs" t="Include" />
+              <e p="JoinEvent.cs" t="Include" />
+              <e p="LogEvent.cs" t="Include" />
+              <e p="NextEvent.cs" t="Include" />
+              <e p="OkEvent.cs" t="Include" />
+              <e p="ReadyEvent.cs" t="Include" />
             </e>
             <e p="Parser.cs" t="Include" />
             <e p="Sender.cs" t="Include" />

@@ -19,7 +19,7 @@ namespace Socket.Events
     {
       List<byte> body = new List<byte>();
       body.Add(Convert.ToByte(UserName.Length));
-      AddBytes(body, StringToBytes(UserName));
+      AddBytes(body, UserName);
       AddBytes(body, Options);
       return body;
     }
