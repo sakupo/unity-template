@@ -10,7 +10,6 @@ namespace Utility
 {
   public class SceneManagerExWithZenject : MonoBehaviour, ISceneManagerEx
   {
-
     private HashSet<SceneEx> activeScenes = new HashSet<SceneEx>();
     [SerializeField] GameObject goLoadingBarrier;
 
@@ -27,13 +26,14 @@ namespace Utility
       {
         activeScenes.Add(scene);
       }
+
       // RootSceneだけHierarchy上にある場合の追加初期シーンの定義
       if (activeScenes.Count == 1 && GetScene<RootScene>() != null)
       {
         await LoadSceneAsync<StartScene>();
       }
     }
-    
+
     public async UniTask LoadSceneAsync<T>(SceneInfo options = null, LoadSceneMode mode = LoadSceneMode.Additive)
       where T : SceneEx
     {
@@ -66,9 +66,10 @@ namespace Utility
       {
         if (scene is T)
         {
-          return (T) scene;
-        } 
+          return (T)scene;
+        }
       }
+
       return null;
     }
 

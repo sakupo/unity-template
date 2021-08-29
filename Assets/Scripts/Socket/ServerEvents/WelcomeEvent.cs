@@ -4,7 +4,7 @@ using Utility;
 
 namespace Socket.ServerEvents
 {
-  public class WelcomeEvent: IServerEvent
+  public class WelcomeEvent : IServerEvent
   {
     public void SetOptions(Dictionary<string, Object> options)
     {

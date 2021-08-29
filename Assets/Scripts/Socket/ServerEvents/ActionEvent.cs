@@ -7,7 +7,7 @@ using Object = System.Object;
 
 namespace Socket.ServerEvents
 {
-  public class ActionEvent: IServerEvent
+  public class ActionEvent : IServerEvent
   {
     private int frame;
     private int bufferSize;
@@ -15,11 +15,12 @@ namespace Socket.ServerEvents
     private byte[] actions;
     private GameManager gameMgr;
     private byte[,] actionBuffers;
+
     public ActionEvent(byte[] body)
     {
       int pos = 0;
       frame = BitConverter.ToInt32(body, pos);
-      pos += 4; 
+      pos += 4;
       bufferSize = body[pos++];
       playerNum = body[pos++];
       actions = new byte[bufferSize];
@@ -32,7 +33,7 @@ namespace Socket.ServerEvents
 
     public void SetOptions(Dictionary<string, Object> options)
     {
-      gameMgr = (GameManager) options["gameManager"];
+      gameMgr = (GameManager)options["gameManager"];
     }
 
     public void Call()
@@ -41,6 +42,7 @@ namespace Socket.ServerEvents
       {
         gameMgr.ActionBuffers[playerNum, i] = actions[i];
       }
+
       gameMgr.latestFrames[playerNum] = frame;
       gameMgr.latestFrame = gameMgr.latestFrames.Min();
     }

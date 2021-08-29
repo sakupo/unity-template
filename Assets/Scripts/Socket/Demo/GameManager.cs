@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Socket.Demo
 {
-  public class GameManager: MonoBehaviour
+  public class GameManager : MonoBehaviour
   {
     private volatile bool isRunning;
     public readonly int totalNoOfPlayer = 2;
@@ -21,14 +21,8 @@ namespace Socket.Demo
 
     private ISyncGame game
     {
-      get
-      {
-        return _game;
-      }
-      set
-      {
-        _game = value as SampleGame;
-      }
+      get { return _game; }
+      set { _game = value as SampleGame; }
     }
 
     private int startFrame = 0;
@@ -71,7 +65,8 @@ namespace Socket.Demo
         // ゲーム開始前
         switch (phase)
         {
-          case 0: case 1:
+          case 0:
+          case 1:
             if (IsOk.All(b => b))
             {
               var ev = new ReadyEvent(PlayerNum);
@@ -81,14 +76,17 @@ namespace Socket.Demo
                 IsOk[i] = false;
               }
             }
+
             break;
           case 2:
             StartGame();
             Debug.Log(PlayerNum.ToString());
             break;
         }
+
         return;
       }
+
       await MoveToNextFrame();
     }
 
@@ -121,6 +119,7 @@ namespace Socket.Demo
         if (lagCounter++ % 60 != 0) break;
         serverEventManager.CallEvents();
       }
+
       game.UpdateGame(this, ActionBuffers);
     }
 
@@ -135,6 +134,7 @@ namespace Socket.Demo
         ownActionBufferIndex = 0;
         ownActionBuffer[0] = 0;
       }
+
       return ev;
     }
   }

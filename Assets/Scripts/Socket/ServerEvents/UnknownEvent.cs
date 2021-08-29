@@ -4,9 +4,10 @@ using Utility;
 
 namespace Socket.ServerEvents
 {
-  public class UnknownEvent: IServerEvent
+  public class UnknownEvent : IServerEvent
   {
     private readonly string message;
+
     public UnknownEvent(string message)
     {
       this.message = message;

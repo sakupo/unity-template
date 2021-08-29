@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Socket.Demo
 {
-  public class SampleGame: MonoBehaviour, ISyncGame
+  public class SampleGame : MonoBehaviour, ISyncGame
   {
     [SerializeField] private GameManager gameMgr;
     [SerializeField] private TextMeshPro tmpro;
@@ -23,10 +23,10 @@ namespace Socket.Demo
           switch (actions[i, j])
           {
             case 1:
-              tmpro.text += (i + 1)+"Pw\n";
+              tmpro.text += (i + 1) + "Pw\n";
               break;
             case 3:
-              tmpro.text += (i + 1)+"Ps\n";
+              tmpro.text += (i + 1) + "Ps\n";
               break;
           }
         }

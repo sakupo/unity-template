@@ -9,6 +9,7 @@ namespace Socket.ClientEvents
     private int startFrame;
     private int bufferSize;
     private byte[] actions;
+
     public ActionEvent(byte[] actions, int bufferSize, int startFrame)
     {
       EventName = "ACTION";
@@ -29,6 +30,7 @@ namespace Socket.ClientEvents
       {
         body.Add(action);
       }
+
       return body;
     }
   }

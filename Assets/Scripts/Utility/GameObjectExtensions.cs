@@ -11,7 +11,7 @@ namespace Utility
         .Where(c => self != c.gameObject)
         .First(obj => obj.GetComponent<T>() != null);
     }
-    
+
     public static T[] GetComponentsInChildrenWithoutSelf<T>(this GameObject self) where T : Component
     {
       return self.GetComponentsInChildren<T>().Where(c => self != c.gameObject).ToArray();

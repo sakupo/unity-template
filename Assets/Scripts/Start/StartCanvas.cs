@@ -4,6 +4,5 @@ namespace Start
 {
   public class StartCanvas : UICanvas
   {
-    
   }
 }

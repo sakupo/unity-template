@@ -6,7 +6,7 @@ using Object = System.Object;
 
 namespace Socket.ServerEvents
 {
-  public class PlayEvent: IServerEvent
+  public class PlayEvent : IServerEvent
   {
     private Int64 randomNum;
     private GameManager gameMgr;
@@ -18,7 +18,7 @@ namespace Socket.ServerEvents
 
     public void SetOptions(Dictionary<string, Object> options)
     {
-      gameMgr = (GameManager) options["gameManager"];
+      gameMgr = (GameManager)options["gameManager"];
     }
 
     public void Call()

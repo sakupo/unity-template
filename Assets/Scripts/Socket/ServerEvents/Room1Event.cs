@@ -6,7 +6,7 @@ using Utility.Binary;
 
 namespace Socket.ServerEvents
 {
-  public class Room1Event: IServerEvent
+  public class Room1Event : IServerEvent
   {
     private TextMeshPro tmpro;
     private GameRoom roomInfo;
@@ -25,10 +25,11 @@ namespace Socket.ServerEvents
         byte userNameLen = body[pos++];
         string userName = BinUtil.BytesToString(body, pos, userNameLen);
         pos += userNameLen;
-        var options = new byte[]{body[pos], body[pos+1], body[pos+2]};
+        var options = new byte[] { body[pos], body[pos + 1], body[pos + 2] };
         pos += 3;
         members.Add(new Player(userName, options));
       }
+
       byte battleType = body[pos++];
       byte num = body[pos++];
       roomInfo = new GameRoom(roomId, members, battleType, num);

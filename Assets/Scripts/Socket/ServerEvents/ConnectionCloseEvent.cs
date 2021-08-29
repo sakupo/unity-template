@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace Socket.ServerEvents
 {
-  public class ConnectionCloseEvent: IServerEvent
+  public class ConnectionCloseEvent : IServerEvent
   {
     private TcpConnector connector;
+
     public ConnectionCloseEvent(TcpConnector connector)
     {
       this.connector = connector;

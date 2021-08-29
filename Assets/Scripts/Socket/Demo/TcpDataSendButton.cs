@@ -15,6 +15,7 @@ namespace Socket.Demo
     [SerializeField] private int num = 0;
     [SerializeField] private TcpClient tcpClient;
     [SerializeField] private byte playerNum = 0;
+
     public TcpClient TcpClient
     {
       get => tcpClient;
@@ -27,7 +28,7 @@ namespace Socket.Demo
       }
     }
 
-    public int roomId= 0;
+    public int roomId = 0;
     [SerializeField] private int randomNum;
     [SerializeField] private byte[] action = new byte[16];
 
@@ -92,6 +93,7 @@ namespace Socket.Demo
         default:
           return;
       }
+
       tcpClient.Send(ev);
     }
   }

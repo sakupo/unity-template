@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Socket.ClientEvents
 {
-  public class ConnectionCloseEvent: IClientEvent
+  public class ConnectionCloseEvent : IClientEvent
   {
     public ConnectionCloseEvent()
     {

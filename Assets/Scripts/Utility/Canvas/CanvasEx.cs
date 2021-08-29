@@ -7,7 +7,6 @@ namespace Utility
 {
   public abstract class CanvasEx : MonoBehaviour
   {
-
     protected virtual void Start()
     {
       InitAtStart();
@@ -35,7 +34,7 @@ namespace Utility
     }
 
     /// <summary>
-    /// このクラスまたは派生クラスがアタッチされたゲームオブジェクトにアタッチされているCanvasを返します
+    ///   このクラスまたは派生クラスがアタッチされたゲームオブジェクトにアタッチされているCanvasを返します
     /// </summary>
     /// <returns></returns>
     public Canvas GetCanvas()
@@ -44,7 +43,7 @@ namespace Utility
     }
 
     /// <summary>
-    /// シーン直下のゲームオブジェクトを全て返します
+    ///   シーン直下のゲームオブジェクトを全て返します
     /// </summary>
     /// <param name="sceneName"></param>
     /// <returns></returns>
@@ -53,9 +52,9 @@ namespace Utility
       GameObject[] objs = SceneManager.GetSceneByName(sceneName).GetRootGameObjects();
       return objs;
     }
-    
+
     /// <summary>
-    /// シーン直下にある任意のコンポーネントを返します
+    ///   シーン直下にある任意のコンポーネントを返します
     /// </summary>
     /// <param name="sceneName"></param>
     /// <typeparam name="T"></typeparam>
@@ -69,7 +68,7 @@ namespace Utility
     }
 
     /// <summary>
-    /// scene直下にあるCanvasの子オブジェクトにある任意のコンポーネントを返します
+    ///   scene直下にあるCanvasの子オブジェクトにある任意のコンポーネントを返します
     /// </summary>
     /// <param name="sceneName"></param>
     /// <typeparam name="T"></typeparam>
@@ -82,7 +81,7 @@ namespace Utility
     }
 
     /// <summary>
-    /// scene直下にあるCanvasを返します
+    ///   scene直下にあるCanvasを返します
     /// </summary>
     /// <param name="sceneName"></param>
     /// <returns></returns>
@@ -90,9 +89,9 @@ namespace Utility
     {
       return GetComponentFromScene<Canvas>(sceneName);
     }
-    
+
     /// <summary>
-    /// scene直下にあるCanvasExを返します
+    ///   scene直下にあるCanvasExを返します
     /// </summary>
     /// <param name="sceneName"></param>
     /// <returns></returns>
@@ -100,9 +99,9 @@ namespace Utility
     {
       return GetComponentFromScene<CanvasEx>(sceneName);
     }
-    
+
     /// <summary>
-    /// 複数のscene直下にあるCanvasExを返します
+    ///   複数のscene直下にあるCanvasExを返します
     /// </summary>
     /// <returns></returns>
     public List<CanvasEx> GetCanvasExsFromScene(params string[] sceneNames)

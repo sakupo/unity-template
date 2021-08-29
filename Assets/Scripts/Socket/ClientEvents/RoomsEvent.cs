@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Socket.ClientEvents
 {
-  public class RoomsEvent: IClientEvent
+  public class RoomsEvent : IClientEvent
   {
     public RoomsEvent()
     {

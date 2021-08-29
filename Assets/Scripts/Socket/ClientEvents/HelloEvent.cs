@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
 using static Utility.Binary.BinUtil;
+
 namespace Socket.ClientEvents
 {
-  public class HelloEvent: IClientEvent
+  public class HelloEvent : IClientEvent
   {
     public string UserName { get; private set; }
     public byte[] Options { get; private set; }

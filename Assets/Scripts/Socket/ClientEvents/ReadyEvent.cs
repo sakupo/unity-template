@@ -6,6 +6,7 @@ namespace Socket.ClientEvents
   public class ReadyEvent : IClientEvent
   {
     private byte playerNum;
+
     public ReadyEvent(byte playerNum)
     {
       EventName = "READY ";

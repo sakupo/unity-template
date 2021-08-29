@@ -9,12 +9,11 @@ namespace Socket
   public class Parser
   {
     private HashAlgorithm hashAlgorithm = new Crc32();
-    private readonly byte[] magicNumber = {0x50, 0x1e};
+    private readonly byte[] magicNumber = { 0x50, 0x1e };
     private readonly UInt32 hashMagic = 0x2144df1c;
 
     public IServerEvent ReadAndParse(TcpClient client)
     {
-
       TcpConnector connector = client.Connector;
       byte[] header = new byte[16];
       int receiveSize = connector.Receive(header);
@@ -29,7 +28,7 @@ namespace Socket
       // hash magicの照合
       var hashMagicBytes = hashAlgorithm.ComputeHash(body.Concat(header).ToArray());
       var hashMagic = BitConverter.ToUInt32(hashMagicBytes.Reverse().ToArray(), 0);
-      var isHashMagicCorrect = hashMagic==this.hashMagic;
+      var isHashMagicCorrect = hashMagic == this.hashMagic;
       if (!isHashMagicCorrect) return new UnknownEvent("Invalid hash algorithm magic.");
       // event名の取得
       var eventName = BinUtil.BytesToString(header.Skip(2).Take(6).ToArray());
@@ -76,6 +75,7 @@ namespace Socket
           serverEvent = new UnknownEvent("Unknown event received");
           break;
       }
+
       return serverEvent;
     }
   }

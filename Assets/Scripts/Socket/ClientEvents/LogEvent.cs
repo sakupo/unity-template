@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using static Utility.Binary.BinUtil;
+
 namespace Socket.ClientEvents
 {
   public class LogEvent : IClientEvent
   {
     private string message;
+
     public LogEvent(string message)
     {
       EventName = "LOG   ";

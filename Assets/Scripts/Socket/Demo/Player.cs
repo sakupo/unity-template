@@ -4,6 +4,7 @@ namespace Socket.Demo
   {
     public readonly string UserName;
     public readonly byte[] Options;
+
     public Player(string userName, byte[] options)
     {
       UserName = userName;

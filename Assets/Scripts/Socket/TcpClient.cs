@@ -6,14 +6,15 @@ using Debug = Utility.Debug;
 
 namespace Socket
 {
-  public class TcpClient: MonoBehaviour
+  public class TcpClient : MonoBehaviour
   {
     public TcpConnector Connector { get; private set; }
     private Parser parser;
     private Sender sender;
-    [SerializeField] private ServerEventManager serverEventManager; 
+    [SerializeField] private ServerEventManager serverEventManager;
+
     /// <summary>
-    /// for debug text
+    ///   for debug text
     /// </summary>
     [SerializeField] private TextMeshPro tmpro;
 
@@ -57,7 +58,7 @@ namespace Socket
         try
         {
           // 受信データの解析処理
-          IServerEvent serverEvent = parser.ReadAndParse(this); 
+          IServerEvent serverEvent = parser.ReadAndParse(this);
           serverEventManager.AddEvent(serverEvent);
         }
         catch (Exception ex)

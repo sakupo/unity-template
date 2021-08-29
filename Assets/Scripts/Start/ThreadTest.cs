@@ -24,7 +24,7 @@ namespace Start
 #elif UNITY_STANDALONE
         UnityEngine.Application.Quit();
 #endif
-       
+
         return;
       }
 

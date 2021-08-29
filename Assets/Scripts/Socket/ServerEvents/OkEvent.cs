@@ -4,7 +4,7 @@ using Socket.Demo;
 
 namespace Socket.ServerEvents
 {
-  public class OkEvent: IServerEvent
+  public class OkEvent : IServerEvent
   {
     private int playerNum;
     private GameManager gameMgr;
@@ -16,7 +16,7 @@ namespace Socket.ServerEvents
 
     public void SetOptions(Dictionary<string, Object> options)
     {
-      gameMgr = (GameManager) options["gameManager"];
+      gameMgr = (GameManager)options["gameManager"];
     }
 
     public void Call()

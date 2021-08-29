@@ -7,8 +7,8 @@ namespace Start
 {
   public class StartButtonController : ButtonController
   {
-    [Inject]
-    private ISceneManagerEx sm;
+    [Inject] private ISceneManagerEx sm;
+
     public override async Task OnClick(string objectName)
     {
       switch (objectName)

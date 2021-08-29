@@ -45,7 +45,7 @@ namespace Utility.Binary
         list.Add(b);
       }
     }
-    
+
     public static byte[] HexStringToBytes(string str)
     {
       return Enumerable

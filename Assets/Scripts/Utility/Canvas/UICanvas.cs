@@ -7,8 +7,8 @@ namespace Utility
 {
   public class UICanvas : CanvasEx
   {
-    [Inject]
-    private ISceneManagerEx sm;
+    [Inject] private ISceneManagerEx sm;
+
     protected override void Start()
     {
       ChangeCamera();
@@ -48,6 +48,5 @@ namespace Utility
         instance.AddComponent<StandaloneInputModule>();
       }
     }
-    
   }
 }

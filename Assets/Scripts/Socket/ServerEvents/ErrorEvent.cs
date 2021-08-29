@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Socket.ServerEvents
 {
-  public class ErrorEvent: IServerEvent
+  public class ErrorEvent : IServerEvent
   {
     public void SetOptions(Dictionary<string, Object> options)
     {

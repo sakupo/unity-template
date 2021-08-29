@@ -2,8 +2,7 @@ using System.Collections.Generic;
 
 namespace Socket.ClientEvents
 {
-  
-  public class PongEvent: IClientEvent
+  public class PongEvent : IClientEvent
   {
     private List<byte> pastPingTime;
 
