@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
-using Socket.Events;
 using Utility;
 using Utility.Binary;
 using static Utility.Binary.BinUtil;
@@ -25,7 +24,7 @@ namespace Socket
       return data;
     }
     
-    public byte[] CreateBinary(ClientEvent ev)
+    public byte[] CreateBinary(IClientEvent ev)
     {
       var body =  ev.GetBytes();
       List<byte> header = CreateHeader(ev.EventName, body.Count).ToList();

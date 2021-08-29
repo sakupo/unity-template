@@ -1,14 +1,17 @@
 using System.Collections.Generic;
 
-namespace Socket.Events
+namespace Socket.ClientEvents
 {
-  public class ExitEvent : ClientEvent
+  public class ExitEvent : IClientEvent
   {
     public ExitEvent()
     {
       EventName = "EXIT  ";
     }
-    public override List<byte> GetBytes()
+
+    public string EventName { get; }
+
+    public List<byte> GetBytes()
     {
       return new List<byte>();
     }

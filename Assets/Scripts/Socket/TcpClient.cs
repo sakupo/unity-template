@@ -1,35 +1,45 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
+using ModestTree;
+using TMPro;
 using UnityEngine;
 using Debug = Utility.Debug;
 
 namespace Socket
 {
-  class TcpClient: MonoBehaviour
+  public class TcpClient: MonoBehaviour
   {
-    TcpConnector connector;
+    public TcpConnector Connector { get; private set; }
     private Parser parser;
     private Sender sender;
+    [SerializeField] private ServerEventManager serverEventManager; 
+    /// <summary>
+    /// for debug text
+    /// </summary>
+    [SerializeField] private TextMeshPro tmpro;
 
     void Start()
     {
       string addr = "127.0.0.1";
       int port = 31117;
-      connector = new TcpConnector();
-      connector.SetConnectInfo(addr, port);
-      // 切断している場合は接続
-      if (!connector.IsConnected)
-      {
-        connector.Connect();
-      }
+      Connector = new TcpConnector();
+      Connector.SetConnectInfo(addr, port);
+      Connector.Connect();
       parser = new Parser();
       sender = new Sender();
-      Thread thread = new Thread(new ThreadStart(Receive));
+      Thread thread = new Thread(Receive);
       thread.Start();
     }
 
-    public void Send(ClientEvent ev)
+    private void Update()
+    {
+      serverEventManager.CallEvents();
+    }
+
+    public void Send(IClientEvent ev)
     {
       var data = sender.CreateBinary(ev);
       Send(data);
@@ -38,21 +48,21 @@ namespace Socket
     void Send(byte[] data)
     {
       // 接続している場合
-      if (connector.IsConnected)
+      if (Connector.IsConnected)
       {
-        connector.Send(data);
+        Connector.Send(data);
       }
     }
 
     void Receive()
     {
-      while (connector.IsConnected)
+      while (Connector.IsConnected)
       {
         try
         {
           // 受信データの解析処理
-          ServerEvent serverEvent = parser.ReadAndParse(connector);
-          serverEvent.Call();
+          IServerEvent serverEvent = parser.ReadAndParse(this); 
+          serverEventManager.AddEvent(serverEvent);
         }
         catch (Exception ex)
         {

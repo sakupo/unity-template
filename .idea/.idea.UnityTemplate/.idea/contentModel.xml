@@ -1140,31 +1140,54 @@
             <e p="RootScene.cs" t="Include" />
           </e>
           <e p="Socket" t="Include">
-            <e p="ClientEvent.cs" t="Include" />
             <e p="ClientEvents" t="Include">
               <e p="ActionEvent.cs" t="Include" />
+              <e p="ConnectionCloseEvent.cs" t="Include" />
               <e p="CreateEvent.cs" t="Include" />
               <e p="ErrorEvent.cs" t="Include" />
               <e p="ExitEvent.cs" t="Include" />
               <e p="FinishEvent.cs" t="Include" />
               <e p="HelloEvent.cs" t="Include" />
+              <e p="IClientEvent.cs" t="Include" />
               <e p="JoinEvent.cs" t="Include" />
               <e p="LogEvent.cs" t="Include" />
               <e p="NextEvent.cs" t="Include" />
               <e p="OkEvent.cs" t="Include" />
+              <e p="PongEvent.cs" t="Include" />
               <e p="ReadyEvent.cs" t="Include" />
+              <e p="RoomsEvent.cs" t="Include" />
+              <e p="XRoomsEvent.cs" t="Include" />
+            </e>
+            <e p="Demo" t="Include">
+              <e p="GameManager.cs" t="Include" />
+              <e p="GameRoom.cs" t="Include" />
+              <e p="ISyncGame.cs" t="Include" />
+              <e p="Player.cs" t="Include" />
+              <e p="SampleGame.cs" t="Include" />
+              <e p="TcpDataSendButton.cs" t="Include" />
             </e>
             <e p="Parser.cs" t="Include" />
             <e p="Sender.cs" t="Include" />
-            <e p="ServerEvent.cs" t="Include" />
+            <e p="ServerEventManager.cs" t="Include" />
             <e p="ServerEvents" t="Include">
+              <e p="ActionEvent.cs" t="Include" />
               <e p="ConnectionCloseEvent.cs" t="Include" />
+              <e p="ErrorEvent.cs" t="Include" />
+              <e p="FinishEvent.cs" t="Include" />
+              <e p="IServerEvent.cs" t="Include" />
+              <e p="OkEvent.cs" t="Include" />
+              <e p="PingEvent.cs" t="Include" />
+              <e p="PlayEvent.cs" t="Include" />
+              <e p="ReadyEvent.cs" t="Include" />
+              <e p="Room1Event.cs" t="Include" />
+              <e p="RoomDeleteEvent.cs" t="Include" />
+              <e p="RoomsEvent.cs" t="Include" />
+              <e p="StartEvent.cs" t="Include" />
               <e p="UnKnownEvent.cs" t="Include" />
               <e p="WelcomeEvent.cs" t="Include" />
             </e>
             <e p="TcpClient.cs" t="Include" />
             <e p="TcpConnector.cs" t="Include" />
-            <e p="TcpDataSendButton.cs" t="Include" />
           </e>
           <e p="Start" t="Include">
             <e p="StartButtonController.cs" t="Include" />
@@ -1172,26 +1195,37 @@
             <e p="StartScene.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
+            <e p="Behavior" t="Include">
+              <e p="ButtonController.cs" t="Include" />
+              <e p="ButtonEx.cs" t="Include" />
+              <e p="ScreenInput.cs" t="Include" />
+            </e>
             <e p="Binary" t="Include">
               <e p="BinUtil.cs" t="Include" />
               <e p="CRC32.cs" t="Include" />
             </e>
-            <e p="ButtonController.cs" t="Include" />
-            <e p="ButtonEx.cs" t="Include" />
-            <e p="CanvasEx.cs" t="Include" />
-            <e p="Debug.cs" t="Include" />
+            <e p="Canvas" t="Include">
+              <e p="CanvasEx.cs" t="Include" />
+              <e p="NavigationCanvas.cs" t="Include" />
+              <e p="UICanvas.cs" t="Include" />
+            </e>
+            <e p="Debug" t="Include">
+              <e p="Debug.cs" t="Include" />
+            </e>
+            <e p="GameObjectExtensions.cs" t="Include" />
             <e p="InitializerTable.cs" t="Include" />
-            <e p="ISceneManagerEx.cs" t="Include" />
-            <e p="MathEx.cs" t="Include" />
-            <e p="NavigationCanvas.cs" t="Include" />
+            <e p="Math" t="Include">
+              <e p="MathEx.cs" t="Include" />
+            </e>
             <e p="PlayerPrefs.cs" t="Include" />
             <e p="RuntimeInitializer.cs" t="Include" />
-            <e p="SceneEx.cs" t="Include" />
-            <e p="SceneInfo.cs" t="Include" />
-            <e p="SceneManagerEx.cs" t="Include" />
-            <e p="SceneManagerExWithZenject.cs" t="Include" />
-            <e p="ScreenInput.cs" t="Include" />
-            <e p="UICanvas.cs" t="Include" />
+            <e p="Scene" t="Include">
+              <e p="ISceneManagerEx.cs" t="Include" />
+              <e p="SceneEx.cs" t="Include" />
+              <e p="SceneInfo.cs" t="Include" />
+              <e p="SceneManagerEx.cs" t="Include" />
+              <e p="SceneManagerExWithZenject.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Tests" t="Include">

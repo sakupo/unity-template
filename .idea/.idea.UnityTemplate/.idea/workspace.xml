@@ -20,15 +20,95 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5112b27c-bdb7-4313-81a8-83864bfac141" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ErrorEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ErrorEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ConnectionCloseEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ConnectionCloseEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/IClientEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/PongEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/PongEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/RoomsEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/RoomsEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/XRoomsEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/XRoomsEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/GameManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/GameRoom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/GameRoom.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/ISyncGame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/ISyncGame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/Player.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/SampleGame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/SampleGame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEventManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEventManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/RoomsEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/RoomsEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Behavior.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Canvas.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Canvas/CanvasEx.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Debug.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameObjectExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameObjectExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Math.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityTemplate/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/IClientEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ActionEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ActionEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/CreateEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/CreateEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ErrorEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ErrorEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ExitEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ExitEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/FinishEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/FinishEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/HelloEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/HelloEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/TcpDataSendButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/TcpDataSendButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/JoinEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/JoinEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/LogEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/LogEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/NextEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/NextEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/OkEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/OkEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ReadyEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ReadyEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/Parser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Parser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/Sender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Sender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/IServerEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/IServerEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/ConnectionCloseEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/ConnectionCloseEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/UnknownEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/UnknownEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/WelcomeEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/WelcomeEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/TcpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/TcpClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/TcpConnector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/TcpConnector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/TcpDataSendButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/TcpDataSendButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Socket/TcpDataSendButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/TcpDataSendButton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Binary/BinUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Binary/BinUtil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Behavior/ButtonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Behavior/ButtonController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Behavior/ButtonEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonEx.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Behavior/ButtonEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/CanvasEx.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/CanvasEx.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Canvas/CanvasEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Debug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Debug/Debug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Debug.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Debug/Debug.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ISceneManagerEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene/ISceneManagerEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ISceneManagerEx.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene/ISceneManagerEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MathEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Math/MathEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MathEx.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Math/MathEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/NavigationCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Canvas/NavigationCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/NavigationCanvas.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Canvas/NavigationCanvas.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene/SceneEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneEx.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene/SceneEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene/SceneInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene/SceneInfo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneManagerEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene/SceneManagerEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneManagerEx.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene/SceneManagerEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneManagerExWithZenject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene/SceneManagerExWithZenject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SceneManagerExWithZenject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Scene/SceneManagerExWithZenject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ScreenInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Behavior/ScreenInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ScreenInput.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Behavior/ScreenInput.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/UICanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Canvas/UICanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/UICanvas.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Canvas/UICanvas.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/EditMode/EditModeTestScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/EditMode/EditModeTestScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,63 +123,65 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@2.0.7/Rider/Editor/ProjectGeneration/AssemblyNameProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Workspace/2020/ChemiLab/Assets/Scripts/Utility/ScreenInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Workspace/2020/ChemiLab/Assets/Scripts/Utility/SceneManagerEx.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Workspace/2021/Unazuki/Assets/Scripts/Utility/CanvasEx.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/ActionEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Workspace/2020/ChemiLab/Assets/Scripts/Utility/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DiInstaller/SceneManagerExInstaller.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/UICanvas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Start/StartButtonController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Debug.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonEx.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ISceneManagerEx.cs" />
-        <option value="$PROJECT_DIR$/Assets/Tests/Editor/AltUnityTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ProjectScripts.asmdef" />
-        <option value="$PROJECT_DIR$/Assets/Tests/Editor/EditModeTestScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTestScript.cs" />
-        <option value="$USER_HOME$/Workspace/2020/ChemiLab/Assets/Scripts/Utility/SceneManagerEx.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/NavigationCanvas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ScreenInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PlayerPrefs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/BannerAdController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MathEx.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/CanvasEx.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DiInstaller/SceneManagerExInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SceneManagerEx.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SceneManagerExWithZenject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/SendButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Binary/binary.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Binary/Binary.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Binary/CRC32.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Binary/Crc32.cs" />
-        <option value="$PROJECT_DIR$/Assets/Tests/EditMode/EditModeTestScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ProtocolEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/Events/HelloEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Socket/Sender.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/UnKnownEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/SelectEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/TcpDataSendButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/CanvasEx.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ClientEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ConnectionCloseEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/CreateEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ErrorEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ExitEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/FinishEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/HelloEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/JoinEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/LogEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/NextEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/PongEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/XRoomsEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/RoomsEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/ServerEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/IServerEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/ConnectionCloseEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/ErrorEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/FinishEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/PingEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/RoomDeleteEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/StartEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/UnknownEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/WelcomeEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/TcpClient.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/TcpConnector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/ConnectionCloseEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/a.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Socket/Parser.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ErrorEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/CreateEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/JoinEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ReadyEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/ActionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/ISyncGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ActionEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/FinishEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ExitEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/SampleGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/GameRoom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/OkEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Binary/BinUtil.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/HelloEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/LogEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/SelectEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/PlayEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEventManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/RoomsEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/OkEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/NextEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/TcpDataSendButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ClientEvents/ReadyEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/TcpClient.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/TcpDataSendButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/ReadyEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/Room1Event.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/TcpConnector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/ServerEvents/ActionEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Socket/Demo/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -122,7 +204,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.build.unityPlugin" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -167,7 +249,10 @@
       <workItem from="1625070895913" duration="7079000" />
       <workItem from="1628944796664" duration="15229000" />
       <workItem from="1629353571663" duration="20168000" />
-      <workItem from="1629484893928" duration="5760000" />
+      <workItem from="1629484893928" duration="19391000" />
+      <workItem from="1629615729091" duration="8852000" />
+      <workItem from="1630131354504" duration="25349000" />
+      <workItem from="1630178691796" duration="16424000" />
     </task>
     <servers />
   </component>
@@ -192,6 +277,14 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="411" y="25" key="SettingsEditor" timestamp="1630168297970">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="411" y="25" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1630168297970" />
+    <state x="240" y="125" width="1200" height="550" key="VCS.FileHistoryDialog" timestamp="1630168298810">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="240" y="125" width="1200" height="550" key="VCS.FileHistoryDialog/0.25.1440.875@0.25.1440.875" timestamp="1630168298810" />
     <state x="409" y="221" width="672" height="678" key="search.everywhere.popup" timestamp="1628946781353">
       <screen x="0" y="25" width="1440" height="875" />
     </state>

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace Utility.Binary
 {
@@ -16,7 +17,7 @@ namespace Utility.Binary
       return System.Text.Encoding.ASCII.GetString(bytes);
     }
 
-    public static string BytesToByteString(byte[] bytes)
+    public static string BytesToHexString(byte[] bytes)
     {
       var str = BitConverter.ToString(bytes);
       str = str.Replace("-", string.Empty);
@@ -33,7 +34,7 @@ namespace Utility.Binary
       int mask = 0x000000FF;
       for (int i = 0; i < 4; i++)
       {
-        list.Add(Convert.ToByte((num >> 8*i) & mask));
+        list.Add(Convert.ToByte((num >> 8 * i) & mask));
       }
     }
 
@@ -51,6 +52,13 @@ namespace Utility.Binary
         .Range(0, str.Length / 2)
         .Select(x => Convert.ToByte(str.Substring(x * 2, 2), 16))
         .ToArray();
+    }
+
+    public static string BytesToString(byte[] bytes, int startPos, byte len)
+    {
+      var targetBytes = new byte[len];
+      Array.Copy(bytes, startPos, targetBytes, 0, len);
+      return BytesToString(targetBytes);
     }
   }
 }

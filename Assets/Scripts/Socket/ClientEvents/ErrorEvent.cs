@@ -1,12 +1,19 @@
 using System.Collections.Generic;
 
-namespace Socket.Events
+namespace Socket.ClientEvents
 {
-  public class ErrorEvent : ClientEvent
+  public class ErrorEvent : IClientEvent
   {
-    public override List<byte> GetBytes()
+    public ErrorEvent()
     {
-      throw new System.NotImplementedException();
+      EventName = "ERROR!";
+    }
+
+    public string EventName { get; }
+
+    public List<byte> GetBytes()
+    {
+      return new List<byte>();
     }
   }
 }

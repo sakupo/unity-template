@@ -99,7 +99,7 @@ namespace Socket
                 networkStream.Write(data, 0, data.Length);
  
                 // 送信成功
-                Debug.Log(MakeLogWithTime($"Send() : [{MakeLog(data, data.Length)}]"));
+               // Debug.Log(MakeLogWithTime($"Send() : [{MakeLog(data, data.Length)}]"));
             }
             catch (Exception ex)
             {
@@ -131,7 +131,7 @@ namespace Socket
                 // 受信成功
                 if (receiveSize > 0)
                 {
-                    Debug.Log(MakeLogWithTime($"Receive() : [{MakeLog(data, receiveSize)}]"));
+                   // Debug.Log(MakeLogWithTime($"Receive() : [{MakeLog(data, receiveSize)}]"));
                 }
             }
             catch (System.IO.IOException)

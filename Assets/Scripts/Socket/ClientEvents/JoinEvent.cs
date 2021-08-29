@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace Socket.Events
+namespace Socket.ClientEvents
 {
-  public class JoinEvent : ClientEvent
+  public class JoinEvent : IClientEvent
   {
     private int roomId = 0;
 
@@ -12,7 +12,10 @@ namespace Socket.Events
       EventName = "JOIN  ";
       this.roomId = roomId;
     }
-    public override List<byte> GetBytes()
+
+    public string EventName { get; }
+
+    public List<byte> GetBytes()
     {
       List<byte> body = new List<byte>();
       body.Add(Convert.ToByte(roomId));

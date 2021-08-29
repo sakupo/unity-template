@@ -1,6 +1,9 @@
+using System;
+using System.Collections.Generic;
+
 namespace Socket.ServerEvents
 {
-  public class ConnectionCloseEvent: ServerEvent
+  public class ConnectionCloseEvent: IServerEvent
   {
     private TcpConnector connector;
     public ConnectionCloseEvent(TcpConnector connector)
@@ -8,7 +11,12 @@ namespace Socket.ServerEvents
       this.connector = connector;
     }
 
-    public override void Call()
+    public void SetOptions(Dictionary<string, Object> options)
+    {
+      return;
+    }
+
+    public void Call()
     {
       connector.Disconnect();
     }

@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace Socket.Events
+namespace Socket.ClientEvents
 {
-  public class NextEvent : ClientEvent
+  public class NextEvent : IClientEvent
   {
     private int randomNum;
 
@@ -12,7 +12,10 @@ namespace Socket.Events
       EventName = "NEXT  ";
       this.randomNum = randomNum;
     }
-    public override List<byte> GetBytes()
+
+    public string EventName { get; }
+
+    public List<byte> GetBytes()
     {
       List<byte> body = new List<byte>();
       body.Add(Convert.ToByte(randomNum));

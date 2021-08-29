@@ -1,9 +1,8 @@
 using System.Collections.Generic;
-using Utility.Binary;
 using static Utility.Binary.BinUtil;
-namespace Socket.Events
+namespace Socket.ClientEvents
 {
-  public class LogEvent : ClientEvent
+  public class LogEvent : IClientEvent
   {
     private string message;
     public LogEvent(string message)
@@ -11,7 +10,10 @@ namespace Socket.Events
       EventName = "LOG   ";
       this.message = message;
     }
-    public override List<byte> GetBytes()
+
+    public string EventName { get; }
+
+    public List<byte> GetBytes()
     {
       List<byte> body = new List<byte>();
       AddBytes(body, message);

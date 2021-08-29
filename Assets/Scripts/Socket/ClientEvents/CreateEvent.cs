@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace Socket.Events
+namespace Socket.ClientEvents
 {
-  public class CreateEvent : ClientEvent
+  public class CreateEvent : IClientEvent
   {
     private int battleType = 0;
     private int num = 0;
@@ -14,7 +14,10 @@ namespace Socket.Events
       this.battleType = battleType;
       this.num = num;
     }
-    public override List<byte> GetBytes()
+
+    public string EventName { get; }
+
+    public List<byte> GetBytes()
     {
       List<byte> body = new List<byte>();
       body.Add(Convert.ToByte(battleType));

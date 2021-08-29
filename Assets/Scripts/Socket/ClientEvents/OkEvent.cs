@@ -1,21 +1,24 @@
 using System;
 using System.Collections.Generic;
 
-namespace Socket.Events
+namespace Socket.ClientEvents
 {
-  public class OkEvent : ClientEvent
+  public class OkEvent : IClientEvent
   {
-    private int randomNum;
+    private byte playerNum;
 
-    public OkEvent(int randomNum)
+    public OkEvent(byte playerNum)
     {
-      EventName = "OKEY  ";
-      this.randomNum = randomNum;
+      EventName = "OKAY  ";
+      this.playerNum = playerNum;
     }
-    public override List<byte> GetBytes()
+
+    public string EventName { get; }
+
+    public List<byte> GetBytes()
     {
       List<byte> body = new List<byte>();
-      body.Add(Convert.ToByte(randomNum));
+      body.Add(Convert.ToByte(playerNum));
       return body;
     }
   }

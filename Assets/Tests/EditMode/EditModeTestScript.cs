@@ -22,7 +22,7 @@ public class EditModeTestScript: ZenjectUnitTestFixture
         var b = crc32.ComputeHash(str);
 
         Console.WriteLine("CRC-32 is {0}", hash);
-        Assert.AreEqual("414FA339", BinUtil.BytesToByteString(b));
+        Assert.AreEqual("414FA339", BinUtil.BytesToHexString(b));
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
