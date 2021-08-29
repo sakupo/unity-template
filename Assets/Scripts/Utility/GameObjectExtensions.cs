@@ -1,8 +1,8 @@
+using System.Linq;
+using UnityEngine;
+
 namespace Utility
 {
-  using System.Linq;
-  using UnityEngine;
-
   public static class GameObjectExtensions
   {
     public static T GetComponentInChildrenWithoutSelf<T>(this GameObject self) where T : Component

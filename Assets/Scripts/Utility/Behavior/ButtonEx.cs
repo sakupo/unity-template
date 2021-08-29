@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Utility
@@ -11,7 +12,7 @@ namespace Utility
     {
       if (buttonController == null)
       {
-        throw new System.Exception("ButtonEx controller is not set.");
+        throw new Exception("ButtonEx controller is not set.");
       }
 
       Debug.Log("Clicked");

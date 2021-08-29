@@ -1193,6 +1193,7 @@
             <e p="StartButtonController.cs" t="Include" />
             <e p="StartCanvas.cs" t="Include" />
             <e p="StartScene.cs" t="Include" />
+            <e p="ThreadTest.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
             <e p="Behavior" t="Include">

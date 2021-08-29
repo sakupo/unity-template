@@ -1,9 +1,6 @@
-using System;
-using System.Linq;
 using Root;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using Zenject;
 
 namespace Utility

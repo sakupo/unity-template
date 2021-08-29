@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Net.Sockets;
 using System.Threading;
 using Utility;
@@ -134,7 +135,7 @@ namespace Socket
                    // Debug.Log(MakeLogWithTime($"Receive() : [{MakeLog(data, receiveSize)}]"));
                 }
             }
-            catch (System.IO.IOException)
+            catch (IOException)
             {
                 // タイムアウト
                 Debug.Log(MakeLogWithTime("Receive() : read timeout."));

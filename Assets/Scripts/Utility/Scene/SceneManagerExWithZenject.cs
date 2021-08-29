@@ -43,7 +43,7 @@ namespace Utility
       goLoadingBarrier.SetActive(false);
       var nextScene = FindObjectOfType<T>();
       if (nextScene is null)
-        throw new System.Exception(sceneName + " is Null");
+        throw new Exception(sceneName + " is Null");
       activeScenes.Add(nextScene);
       nextScene.OnLoad(options);
     }

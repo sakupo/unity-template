@@ -9,12 +9,12 @@ namespace Utility.Binary
   {
     public static byte[] StringToBytes(string str)
     {
-      return System.Text.Encoding.ASCII.GetBytes(str);
+      return Encoding.ASCII.GetBytes(str);
     }
 
     public static string BytesToString(byte[] bytes)
     {
-      return System.Text.Encoding.ASCII.GetString(bytes);
+      return Encoding.ASCII.GetString(bytes);
     }
 
     public static string BytesToHexString(byte[] bytes)

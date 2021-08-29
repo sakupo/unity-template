@@ -1,5 +1,3 @@
-using System;
-using Cysharp.Threading.Tasks.Triggers;
 using TMPro;
 using UnityEngine;
 
