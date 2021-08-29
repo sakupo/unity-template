@@ -1,11 +1,7 @@
-using System;
 using System.Collections;
 using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Socket.ClientEvents;
-using TMPro;
 using UnityEngine;
 
 namespace Socket.Demo
@@ -68,7 +64,7 @@ namespace Socket.Demo
       isStartGame = false;
     }
 
-    private void Update()
+    private async void Update()
     {
       if (!isStartGame)
       {
@@ -93,7 +89,7 @@ namespace Socket.Demo
         }
         return;
       }
-      StartCoroutine(CheckLag());
+      await MoveToNextFrame();
     }
 
     public void OnAnyKeyPressed(byte key)
@@ -111,16 +107,18 @@ namespace Socket.Demo
       }
     }
 
-    private IEnumerator CheckLag()
+    private IEnumerator MoveToNextFrame()
     {
+      // 自分のactionの送信
       int currentFrame = Time.frameCount - startFrame;
       IClientEvent ev = CreateActionEvent(currentFrame);
       tcpClient.Send(ev);
       yield return null;
+      // 他プレイヤーの行動待機
       int lagCounter = 0;
       while (currentFrame > latestFrame)
       {
-        if (lagCounter++ % 60 != 30) break;
+        if (lagCounter++ % 60 != 0) break;
         serverEventManager.CallEvents();
       }
       game.UpdateGame(this, ActionBuffers);
