@@ -74,11 +74,23 @@ fi
 #   exit 1
 # fi
 
+INCLUDE_STRING="Assets/Scripts/**/*.cs"
+# Inspect commit files
+# INCLUDE_STRING=`git diff --name-only --cached --diff-filter=d | sed ':a;N;$!ba;s/\n/;/g'`
+# echo "Include string: $INCLUDE_STRING"
+#
+# If the include string is empty, we're done. This happens e.g. if the commit only consists of deleted files.
+# if [[ -z "$INCLUDE_STRING" ]]
+# then
+#     echo "No files to change"
+#     exit 0
+# fi
+
+SOLUTION_FILE=$(find . -type f -name "*.sln")
+
 # Format C# scripts by Reshaper.
 #
 # echo "Formatting files..."
-# SOLUTION_FILE=$(find . -type f -name "*.sln")
-#
 # if [[ "$OSTYPE" == "msys"* ] -o [ "$OSTYPE" == "cygwin" ]]; then
 #     # For Windows
 #     cleanupcode.exe --include="Assets/Scripts/**/*" --profile="Reformat" UnityTemplate.sln
@@ -91,8 +103,8 @@ fi
 
 # Format C# scripts by dotnet-format(See also .editorconfig).
 echo "Check if C# scripts are formatted..."
-dotnet_format_cmd_path=~/.dotnet/tools/dotnet-format
-$dotnet_format_cmd_path -v q --check UnityTemplate.sln --include "Assets/Scripts/**/*.cs" \
+DOTNET_FORMAT_CMD_PATH=~/.dotnet/tools/dotnet-format
+$DOTNET_FORMAT_CMD_PATH -v q --check $SOLUTION_FILE --include $INCLUDE_STRING \
 || (echo "\nC# scripts format error. Please format inappropriate files (see also .editorconfig)." >&2 ; eval $fail)
 
 echo "pre-commit hook finished."
