@@ -20,7 +20,7 @@ jobs:
     - name: lint
       run: |
         dotnet tool install -g dotnet-format
-        dotnet-format UnityTemplate.sln --include "Assets/Scripts/**/*.cs"
+        dotnet-format --check UnityTemplate.sln --include "Assets/Scripts/**/*.cs"
     # - name: Restore dependencies
     #  run: dotnet restore
     # - name: Build
